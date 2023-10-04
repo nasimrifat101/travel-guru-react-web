@@ -1,12 +1,15 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Configuration} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    plugins: [require("daisyui")],
+    extend: {
+      fontFamily: {
+        'display': ['Bebas Neue', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
-
