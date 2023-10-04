@@ -15,6 +15,7 @@ export const router = createBrowserRouter([
         {
             path: '/',
             element:<Home></Home>,
+            loader: () => fetch('card.json'),
         },
         {
             path: '/details/:id',

@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "/src/assets/images/logo.png";
+import logo from "/src/assets/images/logob.png";
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 
@@ -23,7 +23,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-base-100 px-32">
+      <div className="navbar bg-transparent px-32">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -58,7 +58,7 @@ const Navbar = () => {
           {user ? (
             <button
               onClick={logOut}
-              className="btn bg-yellow-400 text-black hover:bg-green-400 btn-md"
+              className="btn bg-yellow-400 text-black hover:bg-green-400 border-none"
             >
               Log Out
             </button>

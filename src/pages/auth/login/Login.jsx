@@ -27,9 +27,7 @@ const Login = () => {
     const handleGoogleLog=()=>{
         googleLogin();
     }
-    const hadleLogOut =()=>{
-        logOut();
-    }
+
   return (
     <div>
       <Navbar></Navbar>

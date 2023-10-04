@@ -1,0 +1,47 @@
+.bg-image {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('/src/assets/images/Rectangle 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha (fourth) value to change the darkness */
+}
+
+/* Your styles for Navbar and other content elements can be added here */
+.img {
+    display: flex;
+    margin: 0 auto;
+    height: 70vh;
+    width: 90%;
+    border-radius: 5%;
+  }
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 80%;
+    height: 80vh;
+    border-color: white;
+  }
+  .title {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    top: 320px;
+    padding-left: 60px;
+
+  }
+  .carousel-card.active {
+    border: 2px solid yellow;
+  }
+  
